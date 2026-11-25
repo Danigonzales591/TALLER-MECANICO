@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #101820;
+    color: #fff;
+}
+
+.encabezado {
+    padding: 20px 6%;
+    background: #17232d;
+    border-bottom: 3px solid #f0a500;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    background: #f0a500;
+    color: #101820;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.marca h1 {
+    font-size: 22px;
+}
+
+.marca p {
+    color: #b9c3cc;
+    margin-top: 5px;
+}
+
+.login-contenedor {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    max-width: 1100px;
+    min-height: 480px;
+    margin: 50px auto;
+    padding: 0 20px;
+    gap: 25px;
+}
+
+.login-imagen {
+    background:
+        linear-gradient(#0008, #0008),
+        url("../img/taller.jpeg") center/cover no-repeat;
+    border-radius: 18px;
+    display: flex;
+    align-items: end;
+    padding: 35px;
+}
+
+.imagen-texto h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.imagen-texto p {
+    color: #eee;
+    line-height: 1.6;
+}
+
+.login-panel {
+    background: #1d2b36;
+    padding: 40px;
+    border-radius: 18px;
+    align-self: center;
+}
+
+.login-panel h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.login-panel > p {
+    color: #b9c3cc;
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin: 18px 0 8px;
+}
+
+form input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #52616d;
+    border-radius: 8px;
+    background: #101820;
+    color: white;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    background: #f0a500;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #ffc247;
+}
+
+#mensaje {
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #b9c3cc;
+}
+/* PANEL PRINCIPAL */
+
+.panel-principal {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 20px;
+}
+
+.panel-principal > h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.panel-principal > p {
+    color: #b9c3cc;
+    margin-bottom: 30px;
+}
+
+.modulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.modulo {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background: #1d2b36;
+    padding: 28px;
+    border-radius: 15px;
+    border: 1px solid #354653;
+    transition: 0.3s;
+}
+
+.modulo:hover {
+    transform: translateY(-5px);
+    border-color: #f0a500;
+}
+
+.modulo span {
+    font-size: 38px;
+}
+
+.modulo h3 {
+    margin: 15px 0 10px;
+    color: #f0a500;
+}
+
+.modulo p {
+    color: #b9c3cc;
+    line-height: 1.5;
+}
+
+.salir {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background: #f0a500;
+    color: #101820;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* DISEÑO DE FORMULARIOS */
+.formulario-panel {
+    background: #1d2b36;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 25px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.formulario-panel label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #ffffff;
+}
+
+.formulario-panel input,
+.formulario-panel select,
+.formulario-panel textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #52616d;
+    border-radius: 7px;
+    background: #101b24;
+    color: white;
+    box-sizing: border-box;
+}
+
+.formulario-panel button {
+    background: #f59e0b;
+    color: #101b24;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario-panel button:hover {
+    background: #fbbf24;
+}
+
+/* TABLAS */
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1d2b36;
+    color: white;
+}
+
+th {
+    background: #f59e0b;
+    color: #101b24;
+    padding: 13px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #40515e;
+    text-align: center;
+}
+
+td button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background: #b02a37;
+}
+
+/* IMAGENES DEL PANEL PRINCIPAL */
+
+.imagen-modulo {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 9px;
+    margin-bottom: 12px;
+}
+
+.modulo {
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.modulo:hover {
+    transform: translateY(-5px);
+}
+
+.modulo h3 {
+    color: #f59e0b;
+    margin: 10px 0;
+}
+
+.modulo p {
+    color: #d1d5db;
+    line-height: 1.5;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes | Taller Mecánico</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<header class="encabezado">
+    <div class="marca">
+        <div class="logo">TM</div>
+        <div>
+            <h1>TALLER MECÁNICO</h1>
+            <p>Gestión de clientes</p>
+        </div>
+    </div>
+</header>
+
+<main class="panel-principal">
+    <h2>Registro de clientes</h2>
+    <p>Registra y administra los propietarios de los vehículos.</p>
+
+    <section class="formulario-panel">
+        <form id="formClientes">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo">
+
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion">
+
+            <button type="submit">REGISTRAR CLIENTE</button>
+            <p id="mensajeCliente"></p>
+        </form>
+    </section>
+
+    <h2>Lista de clientes</h2>
+
+    <div class="tabla-contenedor">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Dirección</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="listaClientes"></tbody>
+        </table>
+    </div>
+
+    <a href="inicio.html" class="salir">Volver al inicio</a>
+</main>
+
+<footer>
+    <p>© 2026 Taller Mecánico</p>
+</footer>
+
+<script src="../js/clientes.js"></script>
+</body>
+</html>

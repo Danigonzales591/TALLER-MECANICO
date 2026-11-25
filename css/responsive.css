@@ -1,0 +1,101 @@
+@media (max-width: 768px) {
+
+    .encabezado {
+        padding: 15px 5%;
+    }
+
+    .marca h1 {
+        font-size: 18px;
+    }
+
+    .login-contenedor {
+        grid-template-columns: 1fr;
+        margin: 25px auto;
+    }
+
+    .login-imagen {
+        min-height: 250px;
+    }
+
+    .imagen-texto h2 {
+        font-size: 24px;
+    }
+
+    .login-panel {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .login-contenedor {
+        padding: 0 12px;
+    }
+
+    .login-imagen {
+        min-height: 200px;
+        padding: 20px;
+    }
+
+    .login-panel h2 {
+        font-size: 23px;
+    }
+
+    .marca p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px) {
+    .panel-principal {
+        margin: 25px auto;
+    }
+
+    .modulos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .modulos {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-principal > h2 {
+        font-size: 24px;
+    }
+}
+/* ADAPTACIÓN DE FORMULARIOS Y TABLAS */
+
+@media (max-width: 768px) {
+    .formulario-panel {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    .panel-principal {
+        margin: 20px 10px;
+        padding: 12px;
+    }
+
+    .tabla-contenedor {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario-panel {
+        padding: 14px;
+    }
+
+    .formulario-panel button {
+        width: 100%;
+    }
+
+    .panel-principal h2 {
+        font-size: 21px;
+    }
+}

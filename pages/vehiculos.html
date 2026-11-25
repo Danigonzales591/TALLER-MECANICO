@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehículos | Taller Mecánico</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<header class="encabezado">
+    <div class="marca">
+        <div class="logo">TM</div>
+        <div>
+            <h1>TALLER MECÁNICO</h1>
+            <p>Gestión de vehículos</p>
+        </div>
+    </div>
+</header>
+
+<main class="panel-principal">
+    <h2>Registro de vehículos</h2>
+    <p>Administra los automóviles de tus clientes.</p>
+
+    <section class="formulario-panel">
+        <form id="formVehiculos">
+
+            <label for="propietario">Nombre del propietario</label>
+            <input type="text" id="propietario" required>
+
+            <label for="placa">Número de placa</label>
+            <input type="text" id="placa" required>
+
+            <label for="marcaVehiculo">Marca</label>
+            <input type="text" id="marcaVehiculo" required>
+
+            <label for="modelo">Modelo</label>
+            <input type="text" id="modelo" required>
+
+            <label for="anio">Año</label>
+            <input type="number" id="anio" min="1950" max="2026" required>
+
+            <label for="color">Color</label>
+            <input type="text" id="color">
+
+            <button type="submit">REGISTRAR VEHÍCULO</button>
+            <p id="mensajeVehiculo"></p>
+
+        </form>
+    </section>
+
+    <h2>Lista de vehículos</h2>
+
+    <div class="tabla-contenedor">
+        <table>
+            <thead>
+                <tr>
+                    <th>Propietario</th>
+                    <th>Placa</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th>Color</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="listaVehiculos"></tbody>
+        </table>
+    </div>
+
+    <a href="inicio.html" class="salir">Volver al inicio</a>
+</main>
+
+<footer>
+    <p>© 2026 Taller Mecánico</p>
+</footer>
+
+<script src="../js/vehiculos.js"></script>
+</body>
+</html>
